@@ -737,9 +737,13 @@ article {
    Page Header - The top of pages
    ========================================================================== */
 .site-page-head {
+  
+  background-position: center;
+  background-size: cover;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
   position: relative;
   height: 200px;
-  background: #000000;
+  background-color: #000000;
   display: table;
   width: 100%;
   color: #ffffff;
