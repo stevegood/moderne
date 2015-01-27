@@ -700,7 +700,7 @@ article {
 .site-head {
   position: relative;
   height: 60%;
-  max-height: 400px;
+  max-height: 300px;
   background-color: #000000;
   background-position: center;
   background-size: cover;
