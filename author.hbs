@@ -3,7 +3,7 @@
 
 {{! The big featured header }}
 
-<header class="site-page-head">
+<header class="site-page-head" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
     <div class="verticle">
         <a class="blog-title-link" href="{{@blog.url}}">
             {{#if @blog.logo}}
@@ -13,22 +13,22 @@
         </a>
     </div>
 </header>
-	
+
 <main class="content" role="main">
 
     <div class="author-page">
 
             <div class="pane">
-                
+
                 <div class="strip">
-                
+
 		                {{! Everything inside the #author tags pulls data from the author }}
 		                {{#author}}
-		                
+
 		                <h2>{{name}}</h2>
-		
+
                     <section class="author-body">
-                    
+
 		                    <section class="post-author">
 		                        <div class="author">
 		                            <div class="portrait"><img src="{{image}}" alt="Author"></div>
@@ -39,16 +39,16 @@
 		                            </section>
 		                        </div>
 		                    </section>
-				                    
+
 				             {{/author}}
-        
+
                         <section class="author-posts">
-                        
+
                             <div class="posts strip clearfix">
-                            
+
 		                            {{! Each post will be output using this markup }}
 		                            {{#foreach posts}}
-		                
+
 		                            <article class="post-preview {{post_class}}">
 		                                <header class="post-header">
 		                                    <a href="{{url}}"><h3 class="post-title">{{{title}}}</h3></a>
@@ -58,15 +58,15 @@
 		                                    <p>{{excerpt}}&hellip;</p>
 		                                </section>
 		                            </article>
-		                
+
 		                            {{/foreach}}
-		                
+
 		                            {{!! After all the posts, we have the previous/next pagination links }}
 		                            {{pagination}}
-		                
+
 		                        </section>
                         </dvi>
-                    
+
                     </section>
                 </div>
             </div>
