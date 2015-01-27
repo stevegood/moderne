@@ -6,7 +6,7 @@
 {{! Everything inside the #post tags pulls data from the post }}
 {{#post}}
 
-<header class="site-page-head">
+<header class="site-page-head" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
     <div class="verticle">
         <a class="blog-title-link" href="{{@blog.url}}">
             {{#if @blog.logo}}

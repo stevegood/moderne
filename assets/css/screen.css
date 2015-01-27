@@ -52,7 +52,7 @@ html {
   max-height: 100%;
   font-size: 62.5%;
   font-weight: 300;
-  background: #000000;
+  background: #0D0D0D;
 }
 body {
   height: 100%;
@@ -60,7 +60,7 @@ body {
   font-family: 'Open Sans', serif;
   font-size: 2.0rem;
   line-height: 1.6em;
-  color: #3A4145;
+  color: #B5BCC0;
 }
 ::-moz-selection {
   color: #222;
@@ -325,7 +325,7 @@ margin on the iframe, cause it breaks stuff. */
   vertical-align: middle;
 }
 main {
-  background: #ffffff;
+  background: #0D0D0D;
 }
 .pane {
   width: 100%;
